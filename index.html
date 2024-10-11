@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">Switch to Dark Theme</button>
+
+    <form id="expense-form">
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="text" id="category" placeholder="Category" required>
+        <input type="date" id="date" required>
+        <textarea id="description" placeholder="Description"></textarea>
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- Total Expenses Section -->
+    <div id="total-expenses" style="text-align:center;">
+        <h2>Total Expenses</h2>
+        <p id="weekly-total">Total This Week: $0</p>
+        <p id="monthly-total">Total This Month: $0</p>
+        <p id="yearly-total">Total This Year: $0</p>
+    </div>
+    
+
+    <div id="expense-list"></div>
+    <script src="script.js"></script>
+</body>
+</html>
